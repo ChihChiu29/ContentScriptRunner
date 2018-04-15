@@ -23,4 +23,12 @@ var CONFIG = [
       getScriptUrl('dnvod.js'),
     ]
   },
+
+  {
+    description: 'Prevents converting from pre-tax to Roth on Vanguard',
+    urlRegExp: 'https://retirementplans[.]vanguard[.]com/.*irothconversion.*',
+    scripts: [
+      getScriptUrl('vanguard_conversion_protector.js'),
+    ]
+  },
 ];

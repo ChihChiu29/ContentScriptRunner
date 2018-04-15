@@ -3,6 +3,7 @@
 whenDOMIsStable(function() {
   // Banner ads
   $('.i-cp').remove();
+  $('.i-cp3').remove();
   // Floating bottom-right
   $('#msg_title').remove();
   $('#msg_content').remove();

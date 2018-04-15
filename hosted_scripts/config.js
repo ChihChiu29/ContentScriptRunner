@@ -18,7 +18,7 @@ var CONFIG = [
 
   {
     description: 'Remove some ads from https://www.dnvod.tv/',
-    urlRegExp: '.*',
+    urlRegExp: 'https://www[.]dnvod[.]tv/.*',
     scripts: [
       getScriptUrl('dnvod.js'),
     ]

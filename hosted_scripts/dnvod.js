@@ -2,9 +2,9 @@
 
 whenDOMIsStable(function() {
   // Homepage.
-  $('#_LU').remove();
+  //$('#_LU').remove();
   //$('.i-cp, .gsd').remove();
   // Play page.
-  $('.bfq-l-2').get();
-  $('.main, .intro').remove();
+  //$('.bfq-l-2').get();
+  //$('.main, .intro').remove();
 });

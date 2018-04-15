@@ -15,4 +15,12 @@ var CONFIG = [
       getScriptUrl('playground.js'),
     ]
   },
+
+  {
+    description: 'Remove some ads from https://www.dnvod.tv/',
+    urlRegExp: '.*',
+    scripts: [
+      getScriptUrl('dnvod.js'),
+    ]
+  },
 ];

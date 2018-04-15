@@ -4,7 +4,8 @@ whenDOMIsStable(function() {
   // Banner ads
   $('.i-cp').remove();
   // Floating bottom-right
-  $('.aa').remove();
+  $('#msg_title').remove();
+  $('#msg_content').remove();
   // Play window; side ads.
   $('.bfq-l-2').remove();
 });

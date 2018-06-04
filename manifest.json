@@ -5,7 +5,7 @@
 
   "name": "WebTool",
   "description": "Improves browsing experience on various websites.",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "permissions": ["tabs", "storage"],
   "content_scripts": [{
     "matches": ["https://www.dnvod.tv/*"],

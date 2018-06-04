@@ -1,0 +1,23 @@
+{
+"update_url": "https://clients2.google.com/service/update2/crx",
+
+  "manifest_version": 2,
+
+  "name": "WebTool",
+  "description": "Improves browsing experience on various websites.",
+  "version": "1.0.0",
+  "permissions": ["tabs", "storage"],
+  "content_scripts": [{
+    "matches": ["https://www.dnvod.tv/*"],
+    "js": [
+      "external_lib/jquery.min.js",
+      "internal_lib/utils.js",
+      "content_scripts/dnvod.js"
+    ],
+    "run_at": "document_idle",
+    "all_frames": false
+  }],
+  "background": {
+    "page": "background/background.html"
+  }
+}

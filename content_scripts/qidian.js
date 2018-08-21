@@ -25,10 +25,12 @@ function decoratePage() {
       var $elem = $(elem);
       searchTranslation($elem.text(), function(result) {
         if (result.name) {
+          var name_array = result.url.split('/');
+          var translated_name = name_array[name_array.length - 2];
           $elem.append(
             $('<a>')
                 .attr('href', result.url)
-                .text(' (novelupdates)'));
+                .text(' (' + translated_name + ')'));
         }
       });
     });

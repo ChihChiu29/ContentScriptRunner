@@ -5,18 +5,30 @@
 
   "name": "WebTool",
   "description": "Improves browsing experience on various websites.",
-  "version": "1.1.1",
+  "version": "1.2.0",
   "permissions": ["tabs", "storage", "https://*/", "http://*/"],
-  "content_scripts": [{
-    "matches": ["https://www.dnvod.tv/*"],
-    "js": [
-      "external_lib/jquery.min.js",
-      "internal_lib/utils.js",
-      "content_scripts/dnvod.js"
-    ],
-    "run_at": "document_idle",
-    "all_frames": false
-  }],
+  "content_scripts": [
+    {
+      "matches": ["https://www.dnvod.tv/*"],
+      "js": [
+        "external_lib/jquery.min.js",
+        "internal_lib/utils.js",
+        "content_scripts/dnvod.js"
+      ],
+      "run_at": "document_idle",
+      "all_frames": false
+    },
+    {
+      "matches": ["https://www.qidian.com/*"],
+      "js": [
+        "external_lib/jquery.min.js",
+        "internal_lib/utils.js",
+        "content_scripts/qidian.js"
+      ],
+      "run_at": "document_idle",
+      "all_frames": false
+    }
+  ],
   "background": {
     "page": "background/background.html"
   }
